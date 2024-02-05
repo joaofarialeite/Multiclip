@@ -182,3 +182,5 @@ root.mainloop()
 #         messagebox.showerror("Error", "Please enter a valid positive integer.")
 
 #     config_window.destroy()
+
+#alteracoes
