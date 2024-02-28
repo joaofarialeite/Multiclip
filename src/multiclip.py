@@ -125,9 +125,9 @@ def update_clipboard(event):
 #WINDOW
 root = Tk()
 root.title('MultiClip')
-icon_image = PhotoImage(file='/Users/jfl/Desktop/Clippy/multiclip.png')
+icon_image = PhotoImage(file='../photos/Multiclip_logo.png')
 root.iconphoto(True, icon_image)
-root.wm_iconbitmap('/Users/jfl/Desktop/Clippy/multiclip.ico')
+root.wm_iconbitmap('../photos/multiclip.ico')
 root.geometry(f"{min_width}x{min_height}")
 
 #Centrar a window
@@ -137,8 +137,8 @@ center_window(root,min_width,min_height)
 menubar = Menu(root)
 root.config(menu=menubar)
 optionsMenu = Menu(menubar)
-optionsMenu.add_command(label="Clear All",command= clearAll)
 optionsMenu.add_command(label="Labels size",command= change_labels_size)
+optionsMenu.add_command(label="Clear All",command= clearAll)
 menubar.add_cascade(label="Options",menu= optionsMenu)
 
 
